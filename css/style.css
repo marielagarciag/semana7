@@ -1,0 +1,43 @@
+.circulo {
+	position: absolute;
+  background-color: lightblue;
+  top: 260px;
+  left: 900px;
+  width: 100px;
+  height: 100px;
+  border: 5px dashed white;
+  -webkit-animation: coloranim 3s infinite;
+  -webkit-animation-direction: alternate;
+  -webkit-animation-timing-function: ease;
+}
+
+@-webkit-keyframes coloranim {
+    0% {
+    	margin-left: -600px;
+      background-color: transparent;
+      border-radius: 500px;
+    }
+
+    25% { 
+    	background-color: lightblue;
+    }
+
+    50% {
+    	margin-top: -70px;
+      background-color: orange;
+      border-radius: 150px;
+    }
+
+    100% {
+      background-color: transparent;
+      -webkit-transform: rotate(-360deg);
+      border-radius: 600px;
+    }
+}
+
+body {
+	background-color: lightgreen;
+}
+
+
+
